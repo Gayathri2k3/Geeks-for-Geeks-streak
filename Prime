@@ -1,0 +1,20 @@
+class Solution {
+    static boolean isPrime(int n) {
+        if(n<2){
+            return false;
+        }
+        for(int i=2;i*i<=n;i++){
+            if(n%i==0){
+                return false;
+            }
+        }
+        return true;
+        // code here
+        
+    }
+    public static void main(String args[]){
+        int n=5;
+        Solution sol=new Solution();
+        System.out.println(sol.isPrime(n));
+    }
+}
